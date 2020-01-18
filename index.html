@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Password Generator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1>Password Generator</h1>
+        <br>
+        <p><strong>Choose the type of password you want to generate</p>
+        </strong></p>
+    </div>
+<br>
+<br>
+<br>
+<!-- User data input coding 
+<div class="container-fluid">
+    <div class="row"></div>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8"></div>
+    <h6 style="text-align: center;">Length of password?
+    <input type="number" id="length" min='8' max='128' value=''/></h6>
+</div>
+-->
+
+
+<div class="container-fluid">
+    <div class="row"></div>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8"></div>
+    <h6 style="text-align: center;">Length of password (between 8 - 128):
+    <input type = "number" id="length" value= '12' /></h6>
+</div>
+
+
+    <div class="container-fluid">
+        <div class="row"></div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8"></div>
+        <h6 style="text-align: center;">Uppercase characters? <input type="checkbox" id="uppercase" checked /></h6>
+        <div class="col-sm-2"></div>
+    </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row"></div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8"></div>
+        <h6 style="text-align: center;">Lowercase characters? <input type="checkbox" id="lowercase" checked /></h6>
+        <div class="col-sm-2"></div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row"></div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8"></div>
+        <h6 style="text-align: center;">Include numbers? <input type="checkbox" id="numbers" checked /></h6>
+        <div class="col-sm-2"></div>
+        </div>
+
+    <div class="container-fluid">
+        <div class="row"></div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8"></div>
+        <h6 style="text-align: center;">Special characters? <input type="checkbox" id="symbols" checked /></h6>
+        <div class="col-sm-2"></div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <!--User output coding-->
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8" style="text-align:center;"><button type="button" 
+            id="generate">Click to generate a password</button> </div>
+        <div class="col-sm-2"></div>
+    <br>
+    </div>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8" style="text-align:center;">
+            <h3 id="result"></h3>
+            <button type="button" id="clipboard">Click to copy password to the Clipboard</button>
+        </div>
+        <div class="col-sm-2"></div>
+    <br>
+    </div>
+    </div>
+    <br>
+    
+    <!--
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8" style="text-align:center;">Here is your password:</div>
+        <div class="result"><id="result"></id></div>
+        <div class="col-sm-2"></div>
+    </div>
+-->
+<!--
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8" style="text-align:center;"><p id="result"></p></div>
+    <div class="col-sm-2"></div>
+<br>
+
+
+<div class="result-container">
+    <span id="result"></span>
+    <button class="btn" id="clipboard">
+        <i class="far fa-clipboard"></i>
+    </button>
+</div>
+-->
+
+
+<!-- this is messy 
+    
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8"></div>
+        <h6 style="text-align:center;"> Here is your password:
+        <button class="btn" id="clipboard">
+        <i class="far fa-clipboard"></i>
+        </button>
+        <div class="col-sm-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <br>
+            <h3 style="text-align:center;" id="pwd"></h3>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8" style="text-align:center;">
+            <br>
+            <p>Copy password to clipboard. </p>
+            <input style="text-align:center;" type="text" id="pwdGen">
+            <button onclick="copyText()">Copy text</button>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+-->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
